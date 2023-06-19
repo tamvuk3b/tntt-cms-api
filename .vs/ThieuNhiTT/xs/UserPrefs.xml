@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{32139107-1AF4-4606-B0D9-C7E8795AA745}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThieuNhiTT.Api/Models/XuDoan.cs">
+    <Files>
+      <File FileName="ThieuNhiTT.Api/Program.cs" Line="16" Column="24" />
+      <File FileName="ThieuNhiTT.Api/WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="ThieuNhiTT.Api/appsettings.json" Line="1" Column="1" />
+      <File FileName="ThieuNhiTT.Api/Properties/launchSettings.json" Line="8" Column="23" />
+      <File FileName="ThieuNhiTT.Api/Dockerfile" Line="1" Column="1" />
+      <File FileName="ThieuNhiTT.Api/Models/TongLienDoan.cs" Line="1" Column="1" />
+      <File FileName="ThieuNhiTT.Api/Models/LienDoan.cs" Line="1" Column="1" />
+      <File FileName="ThieuNhiTT.Api/Models/HiepDoan.cs" Line="1" Column="1" />
+      <File FileName="ThieuNhiTT.Api/Models/XuDoan.cs" Line="10" Column="26" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ThieuNhiTT" expanded="True">
+            <Node name="ThieuNhiTT.Api" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="XuDoan.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ThieuNhiTT.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

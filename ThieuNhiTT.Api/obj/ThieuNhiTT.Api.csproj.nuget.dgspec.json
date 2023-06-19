@@ -1,32 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PROJECT\\Study\\tntt-cms-api\\ThieuNhiTT.Api\\ThieuNhiTT.Api.csproj": {}
+    "/Users/macbook/Documents/Study/tntt-cms-api/ThieuNhiTT.Api/ThieuNhiTT.Api.csproj": {}
   },
   "projects": {
-    "D:\\PROJECT\\Study\\tntt-cms-api\\ThieuNhiTT.Api\\ThieuNhiTT.Api.csproj": {
+    "/Users/macbook/Documents/Study/tntt-cms-api/ThieuNhiTT.Api/ThieuNhiTT.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PROJECT\\Study\\tntt-cms-api\\ThieuNhiTT.Api\\ThieuNhiTT.Api.csproj",
+        "projectUniqueName": "/Users/macbook/Documents/Study/tntt-cms-api/ThieuNhiTT.Api/ThieuNhiTT.Api.csproj",
         "projectName": "ThieuNhiTT.Api",
-        "projectPath": "D:\\PROJECT\\Study\\tntt-cms-api\\ThieuNhiTT.Api\\ThieuNhiTT.Api.csproj",
-        "packagesPath": "C:\\Users\\tavu\\.nuget\\packages\\",
-        "outputPath": "D:\\PROJECT\\Study\\tntt-cms-api\\ThieuNhiTT.Api\\obj\\",
+        "projectPath": "/Users/macbook/Documents/Study/tntt-cms-api/ThieuNhiTT.Api/ThieuNhiTT.Api.csproj",
+        "packagesPath": "/Users/macbook/.nuget/packages/",
+        "outputPath": "/Users/macbook/Documents/Study/tntt-cms-api/ThieuNhiTT.Api/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\tavu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/macbook/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "/usr/local/share/dotnet/library-packs": {},
+          "/usr/local/share/dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,9 +44,33 @@
               "target": "Package",
               "version": "[7.0.7, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.18.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -77,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
         }
       }
     }
