@@ -12,11 +12,11 @@ namespace ThieuNhiTT.Api.Models
 		public int HiepDoanId { get; set; }
 		public string? TenXuDoan { get; set; }
 		public string? GiaoXu { get; set; }
-		
-        public XuDoan()
-		{
-			
-		}
+        public DateTime CreatedDate { get; set; }
+        public string? CreatedBy { get; set; }
+        public DateTime UpdatedDate { get; set; }
+        public string? UpdatedBy { get; set; }
+        
 	}
 }
 

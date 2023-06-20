@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ThieuNhiTT.Api.Models;
 
@@ -11,9 +12,11 @@ using ThieuNhiTT.Api.Models;
 namespace ThieuNhiTT.Api.Migrations
 {
     [DbContext(typeof(TNContext))]
-    partial class TNContextModelSnapshot : ModelSnapshot
+    [Migration("20230620153334_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,6 +34,7 @@ namespace ThieuNhiTT.Api.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
@@ -46,14 +50,13 @@ namespace ThieuNhiTT.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("LienDoanId");
 
                     b.ToTable("HiepDoan");
                 });
@@ -67,27 +70,34 @@ namespace ThieuNhiTT.Api.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("GVCN_PIN")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("KetLuan")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NamHoc")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PIN")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ThanhTich")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedDate")
@@ -107,6 +117,7 @@ namespace ThieuNhiTT.Api.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
@@ -122,6 +133,7 @@ namespace ThieuNhiTT.Api.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("UpdatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedDate")
@@ -129,34 +141,7 @@ namespace ThieuNhiTT.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TongLienDoanId");
-
                     b.ToTable("LienDoan");
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.LopHoc", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("GVCN")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NamHoc")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nganh")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TenLop")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("LopHoc");
                 });
 
             modelBuilder.Entity("ThieuNhiTT.Api.Models.MonHoc", b =>
@@ -168,6 +153,7 @@ namespace ThieuNhiTT.Api.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
@@ -177,26 +163,28 @@ namespace ThieuNhiTT.Api.Migrations
                         .HasColumnType("float");
 
                     b.Property<string>("GhiChu")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("KetQuaHocTapId")
                         .HasColumnType("int");
 
                     b.Property<string>("PIN")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TenMon")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("KetQuaHocTapId");
 
                     b.ToTable("MonHoc");
                 });
@@ -210,54 +198,61 @@ namespace ThieuNhiTT.Api.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("DiaChi")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Ho")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageLargeUri")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageSmallUri")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("LopHocId")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("NgaySinh")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("NhanXet")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PIN")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("SoDT1")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("SoDT2")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Ten")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TenCha")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TenMe")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Type")
-                        .HasColumnType("int");
-
                     b.Property<string>("UpdatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedDate")
@@ -268,11 +263,8 @@ namespace ThieuNhiTT.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("LopHocId");
-
                     b.HasIndex("PIN")
-                        .IsUnique()
-                        .HasFilter("[PIN] IS NOT NULL");
+                        .IsUnique();
 
                     b.ToTable("Profile");
                 });
@@ -289,6 +281,7 @@ namespace ThieuNhiTT.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
@@ -298,6 +291,7 @@ namespace ThieuNhiTT.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedDate")
@@ -317,6 +311,7 @@ namespace ThieuNhiTT.Api.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CreatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreatedDate")
@@ -332,6 +327,7 @@ namespace ThieuNhiTT.Api.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedBy")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("UpdatedDate")
@@ -339,77 +335,7 @@ namespace ThieuNhiTT.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("HiepDoanId");
-
                     b.ToTable("XuDoan");
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.HiepDoan", b =>
-                {
-                    b.HasOne("ThieuNhiTT.Api.Models.LienDoan", null)
-                        .WithMany("HiepDoans")
-                        .HasForeignKey("LienDoanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.LienDoan", b =>
-                {
-                    b.HasOne("ThieuNhiTT.Api.Models.TongLienDoan", null)
-                        .WithMany("LienDoans")
-                        .HasForeignKey("TongLienDoanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.MonHoc", b =>
-                {
-                    b.HasOne("ThieuNhiTT.Api.Models.KetQuaHocTap", null)
-                        .WithMany("MonHocs")
-                        .HasForeignKey("KetQuaHocTapId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.Profile", b =>
-                {
-                    b.HasOne("ThieuNhiTT.Api.Models.LopHoc", null)
-                        .WithMany("DanhSach")
-                        .HasForeignKey("LopHocId");
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.XuDoan", b =>
-                {
-                    b.HasOne("ThieuNhiTT.Api.Models.HiepDoan", null)
-                        .WithMany("XuDoans")
-                        .HasForeignKey("HiepDoanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.HiepDoan", b =>
-                {
-                    b.Navigation("XuDoans");
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.KetQuaHocTap", b =>
-                {
-                    b.Navigation("MonHocs");
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.LienDoan", b =>
-                {
-                    b.Navigation("HiepDoans");
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.LopHoc", b =>
-                {
-                    b.Navigation("DanhSach");
-                });
-
-            modelBuilder.Entity("ThieuNhiTT.Api.Models.TongLienDoan", b =>
-                {
-                    b.Navigation("LienDoans");
                 });
 #pragma warning restore 612, 618
         }

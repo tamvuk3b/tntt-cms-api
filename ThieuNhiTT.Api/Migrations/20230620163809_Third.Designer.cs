@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ThieuNhiTT.Api.Models;
 
@@ -11,9 +12,11 @@ using ThieuNhiTT.Api.Models;
 namespace ThieuNhiTT.Api.Migrations
 {
     [DbContext(typeof(TNContext))]
-    partial class TNContextModelSnapshot : ModelSnapshot
+    [Migration("20230620163809_Third")]
+    partial class Third
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

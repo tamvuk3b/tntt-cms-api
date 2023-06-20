@@ -1,35 +1,44 @@
 ﻿<Properties StartupConfiguration="{32139107-1AF4-4606-B0D9-C7E8795AA745}|https">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ThieuNhiTT.Api/Models/XuDoan.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ThieuNhiTT.Api/Controllers/XudoanController.cs">
     <Files>
-      <File FileName="ThieuNhiTT.Api/Program.cs" Line="16" Column="24" />
-      <File FileName="ThieuNhiTT.Api/WeatherForecast.cs" Line="1" Column="1" />
-      <File FileName="ThieuNhiTT.Api/appsettings.json" Line="1" Column="1" />
-      <File FileName="ThieuNhiTT.Api/Properties/launchSettings.json" Line="8" Column="23" />
-      <File FileName="ThieuNhiTT.Api/Dockerfile" Line="1" Column="1" />
-      <File FileName="ThieuNhiTT.Api/Models/TongLienDoan.cs" Line="1" Column="1" />
-      <File FileName="ThieuNhiTT.Api/Models/LienDoan.cs" Line="1" Column="1" />
-      <File FileName="ThieuNhiTT.Api/Models/HiepDoan.cs" Line="1" Column="1" />
-      <File FileName="ThieuNhiTT.Api/Models/XuDoan.cs" Line="10" Column="26" />
+      <File FileName="ThieuNhiTT.Api/Program.cs" Line="15" Column="1" />
+      <File FileName="ThieuNhiTT.Api/WeatherForecast.cs" />
+      <File FileName="ThieuNhiTT.Api/appsettings.json" />
+      <File FileName="ThieuNhiTT.Api/Properties/launchSettings.json" />
+      <File FileName="ThieuNhiTT.Api/Dockerfile" />
+      <File FileName="ThieuNhiTT.Api/Models/TongLienDoan.cs" Line="20" Column="6" />
+      <File FileName="ThieuNhiTT.Api/Models/LienDoan.cs" Line="19" Column="38" />
+      <File FileName="ThieuNhiTT.Api/Models/HiepDoan.cs" Line="19" Column="36" />
+      <File FileName="ThieuNhiTT.Api/Models/XuDoan.cs" Line="16" Column="23" />
+      <File FileName="ThieuNhiTT.Api/Models/TNContext.cs" Line="48" Column="10" />
+      <File FileName="ThieuNhiTT.Api/Migrations/TNContextModelSnapshot.cs" Line="1" Column="1" />
+      <File FileName="ThieuNhiTT.Api/Models/Profile.cs" Line="20" Column="38" />
+      <File FileName="ThieuNhiTT.Api/Models/KetQuaHocTap.cs" Line="21" Column="36" />
+      <File FileName="ThieuNhiTT.Api/Models/MonHoc.cs" Line="6" Column="2" />
+      <File FileName="ThieuNhiTT.Api/Models/LopHoc.cs" Line="7" Column="21" />
+      <File FileName="ThieuNhiTT.Api/Controllers/XudoanController.cs" Line="25" Column="23" />
+      <File FileName="ThieuNhiTT.Api/Controllers/WeatherForecastController.cs" Line="25" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ThieuNhiTT" expanded="True">
             <Node name="ThieuNhiTT.Api" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="XuDoan.cs" selected="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="XudoanController.cs" selected="True" />
               </Node>
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.ThieuNhiTT.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.ThieuNhiTT.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

@@ -12,6 +12,11 @@ namespace ThieuNhiTT.Api.Models
         public int LienDoanId { get; set; }
         public string? TenHiepDoan { get; set; }
         public string? GiaoHat { get; set; }
+        public DateTime CreatedDate { get; set; }
+        public string? CreatedBy { get; set; }
+        public DateTime UpdatedDate { get; set; }
+        public string? UpdatedBy { get; set; }
+        public ICollection<XuDoan>? XuDoans { get; set; }
     }
 }
 
